@@ -3,8 +3,9 @@ import Card from '../UI/Card';
 import './Expenses.css'
 
 const Expenses = (props) => {
-  const items = props.items.map((expense) =>
-  <ExpenseItem 
+  const items = props.items.map((expense, index) =>
+  <ExpenseItem
+    key={index}
     title={expense.title}
     amount={expense.amount}
     date={expense.date}
