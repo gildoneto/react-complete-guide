@@ -12,9 +12,21 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
 
   useEffect(() => {
-    setFormIsValid(
-      enteredEmail.includes('@') && enteredPassword.trim().length > 6
-    );
+    // deboucing -> a cada digitação iniciamos um timeout
+    // e se o usuário demorar menos que 500ms nós limpamos
+    // o timeout e setamos um novo logo após.
+    // a checagem só acontecerá se ele parar de digitar por
+    // 500ms
+    const identifier = setTimeout(() => {
+      console.log('Checking validity');
+      setFormIsValid(
+        enteredEmail.includes('@') && enteredPassword.trim().length > 6
+      );
+    }, 500);
+    return () => {
+      console.log('CLeanUP');
+      clearTimeout(identifier);
+    };
   }, [enteredEmail, enteredPassword]);
 
   const emailChangeHandler = (event) => {
