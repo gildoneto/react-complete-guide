@@ -11,6 +11,21 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
+  /*
+    useEffect com array de dependências vazio
+    só roda a primeira vez que o componente renderiza.
+    Se houver uma função de retorno (CLEANUP FUNCTION)
+    com o array vazio, ela só será acionada na desmontagem
+    do componente.
+  */
+  useEffect(() => {
+    console.log('EFFECT RUNNING');
+
+    return () => {
+      console.log('EFFECT CLEANUP')
+    };
+  }, []);
+
   useEffect(() => {
     // deboucing -> a cada digitação iniciamos um timeout
     // e se o usuário demorar menos que 500ms nós limpamos
