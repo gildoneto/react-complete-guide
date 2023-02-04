@@ -56,41 +56,44 @@ const Login = (props) => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   /**
-  //     deboucing -> a cada digitação iniciamos um timeout
-  //     e se o usuário demorar menos que 500ms nós limpamos
-  //     o timeout e setamos um novo logo após.
-  //     a checagem só acontecerá se ele parar de digitar por
-  //     500ms
-  //    */
+  const { isValid: emailIsValid } = emailState;
+  const { isValid: passwordIsValid } = passwordState;
 
-  //   const identifier = setTimeout(() => {
-  //     console.log('Checking validity');
-  //     setFormIsValid(
-  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
-  //     );
-  //   }, 500);
-  //   return () => {
-  //     console.log('CLeanUP');
-  //     clearTimeout(identifier);
-  //   };
-  // }, [enteredEmail, enteredPassword]);
+  useEffect(() => {
+    /**
+      deboucing -> a cada digitação iniciamos um timeout
+      e se o usuário demorar menos que 500ms nós limpamos
+      o timeout e setamos um novo logo após.
+      a checagem só acontecerá se ele parar de digitar por
+      500ms
+     */
+
+    const identifier = setTimeout(() => {
+      console.log('Checking validity');
+      setFormIsValid(
+        emailIsValid && passwordIsValid
+      );
+    }, 500);
+    return () => {
+      console.log('CLeanUP');
+      clearTimeout(identifier);
+    };
+  }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = (event) => {
     dispatchEmail({type: 'USER_INPUT', val: event.target.value});
 
-    setFormIsValid(
-      event.target.value.includes('@') && passwordState.isValid
-    );
+    // setFormIsValid(
+    //   event.target.value.includes('@') && passwordState.isValid
+    // );
   };
 
   const passwordChangeHandler = (event) => {
     dispatchPassword({ type: 'USER_INPUT', val: event.target.value });
 
-    setFormIsValid(
-      emailState.isValid && event.target.value.trim().length > 6
-    );
+    // setFormIsValid(
+    //   emailState.isValid && event.target.value.trim().length > 6
+    // );
   };
 
   const validateEmailHandler = () => {
