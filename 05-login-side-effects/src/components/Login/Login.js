@@ -26,33 +26,40 @@ const Login = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    // deboucing -> a cada digitação iniciamos um timeout
-    // e se o usuário demorar menos que 500ms nós limpamos
-    // o timeout e setamos um novo logo após.
-    // a checagem só acontecerá se ele parar de digitar por
-    // 500ms
-    const identifier = setTimeout(() => {
-      console.log('Checking validity');
-      setFormIsValid(
-        enteredEmail.includes('@') && enteredPassword.trim().length > 6
-      );
-    }, 500);
-    return () => {
-      console.log('CLeanUP');
-      clearTimeout(identifier);
-    };
-  }, [enteredEmail, enteredPassword]);
+  // useEffect(() => {
+  //   /**
+  //     deboucing -> a cada digitação iniciamos um timeout
+  //     e se o usuário demorar menos que 500ms nós limpamos
+  //     o timeout e setamos um novo logo após.
+  //     a checagem só acontecerá se ele parar de digitar por
+  //     500ms
+  //    */
+
+  //   const identifier = setTimeout(() => {
+  //     console.log('Checking validity');
+  //     setFormIsValid(
+  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
+  //     );
+  //   }, 500);
+  //   return () => {
+  //     console.log('CLeanUP');
+  //     clearTimeout(identifier);
+  //   };
+  // }, [enteredEmail, enteredPassword]);
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
+
+    setFormIsValid(
+      event.target.value.includes('@') && enteredPassword.trim().length > 6
+    );
   };
 
   const passwordChangeHandler = (event) => {
     setEnteredPassword(event.target.value);
 
     setFormIsValid(
-      event.target.value.trim().length > 6 && enteredEmail.includes('@')
+      enteredEmail.includes('@') && event.target.value.trim().length > 6
     );
   };
 
