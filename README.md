@@ -133,3 +133,49 @@ const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 
 `initFn`: A function to set the initial state programatically.
 
+### Adding Nested Properties As Dependencies To useEffect
+
+In the previous lecture, we used object destructuring to add object properties as dependencies to `useEffect()`.
+
+```javascript
+const { someProperty } = someObject;
+useEffect(() => {
+  // code that only uses someProperty ...
+}, [someProperty]);
+```
+
+This is a **very common pattern and approach**, which is why I typically use it and why I show it here (I will keep on using it throughout the course).
+
+I just want to point out, that they **key thing is NOT that we use destructuring** but that we **pass specific properties instead of the entire object** as a dependency.
+
+We could also write this code and it would **work in the same way**.
+
+```javascript
+useEffect(() => {
+  // code that only uses someProperty ...
+}, [someObject.someProperty]);
+```
+
+This works just fine as well!
+
+But you should **avoid** this code:
+
+```javascript
+useEffect(() => {
+  // code that only uses someProperty ...
+}, [someObject]);
+```
+
+Why?
+
+Because now the e**ffect function would re-run whenever ANY property** of `someObject` changes - not just the one property (`someProperty` in the above example) our effect might depend on.
+
+### useState() vs useReducer()
+
+Generally, you'll know when you need useReducer() (-> when useState() become cumbersome or you're getting a lot of bugs/ unintended behaviours)
+
+| `useState()` | `useReducer()` |
+| --- | ---|
+| The main state management "tool" | Great if you need "more power" |
+| Great for independent pieces of state/data | Should be considered if you have related pieces of state/data |
+| Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates |
