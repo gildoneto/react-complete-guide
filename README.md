@@ -108,3 +108,19 @@ In this example:
 #### DEBOUCING
 
 Do something when the user stops typing.
+
+### Introducing `useReducer()` for State Management
+
+Sometimes, you have **more complex state** - for example if it got **multiple states**, **multiple ways of changing** it or **dependencies** to other states.
+
+`useState()` then often **becomes hard or error-prone to use** - it's easy to write bad, inefficient or buggy code in such scenarios.
+
+`useReducer()` can be used as a replacement for `useState()` if you need **"more powerful state management"**
+
+### Understanding useReducer()
+
+```javascript
+const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
+```
+
+The state snapshot used in the component re-render/re-evaluation cycle.
