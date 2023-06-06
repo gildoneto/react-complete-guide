@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState, useEffect, useReducer, useContext } from 'react';
 
 import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
+import AuthContext from '../../store/auth-context';
 
 const emailReducer = (state, action) => {
   if (action.type === 'USER_INPUT') {
@@ -11,7 +12,7 @@ const emailReducer = (state, action) => {
   if (action.type === 'INPUT_BLUR') {
     return { value: state.value, isValid: state.value.includes('@') };
   }
-  return {value:'', isValid: false}
+  return { value: '', isValid: false };
 };
 
 const passwordReducer = (state, action) => {
@@ -21,20 +22,32 @@ const passwordReducer = (state, action) => {
   if (action.type === 'INPUT_BLUR') {
     return { value: state.value, isValid: state.value.trim().length > 6 };
   }
-  return {value:'', isValid: false}
+  return { value: '', isValid: false };
 };
 
-const Login = (props) => {
-  // const [enteredEmail, setEnteredEmail] = useState('');
-  // const [emailIsValid, setEmailIsValid] = useState();
-  // const [enteredPassword, setEnteredPassword] = useState('');
-  // const [passwordIsValid, setPasswordIsValid] = useState();
+const Login = props => {
   const [formIsValid, setFormIsValid] = useState(false);
 
-  const [emailState, dispatchEmail] = useReducer(emailReducer, {value: '', isValid: null});
-  const [passwordState, dispatchPassword] = useReducer(passwordReducer, {value: '', isValid: null});
+  const [emailState, dispatchEmail] = useReducer(emailReducer, {
+    value: '',
+    isValid: null,
+  });
 
-  useEffect(() => { 
+  const [passwordState, dispatchPassword] = useReducer(passwordReducer, {
+    value: '',
+    isValid: null,
+  });
+
+  const authCtx = useContext(AuthContext);
+
+  /*
+    useEffect com array de dependências vazio
+    só roda a primeira vez que o componente renderiza.
+    Se houver uma função de retorno (CLEANUP FUNCTION)
+    com o array vazio, ela só será acionada na desmontagem
+    do componente.
+  */
+  useEffect(() => {
     console.log('EFFECT RUNNING');
 
     return () => {
@@ -44,50 +57,45 @@ const Login = (props) => {
 
   const { isValid: emailIsValid } = emailState;
   const { isValid: passwordIsValid } = passwordState;
-  
+
   useEffect(() => {
+    /**
+      deboucing -> a cada digitação iniciamos um timeout
+      e se o usuário demorar menos que 500ms nós limpamos
+      o timeout e setamos um novo logo após.
+      a checagem só acontecerá se ele parar de digitar por
+      500ms
+     */
+
     const identifier = setTimeout(() => {
-      console.log('Checkin form validity')
-      setFormIsValid(
-        emailState.isValid && passwordState.isValid
-      );
+      console.log('Checking validity');
+      setFormIsValid(emailIsValid && passwordIsValid);
     }, 500);
-    
-    // cleanup function
     return () => {
-      console.log('CLEANUP');
+      console.log('CLeanUP');
       clearTimeout(identifier);
     };
-  }, [emailIsValid, passwordIsValid])
-  
+  }, [emailIsValid, passwordIsValid]);
 
-  const emailChangeHandler = (event) => {
-    dispatchEmail({type: 'USER_INPUT', val: event.target.value});
-    
-    // setFormIsValid(
-    //   event.target.value.includes('@') && passwordState.isValid
-    // );
+  const emailChangeHandler = event => {
+    dispatchEmail({ type: 'USER_INPUT', val: event.target.value });
   };
 
-  const passwordChangeHandler = (event) => {
-    dispatchPassword({type: 'USER_INPUT', val: event.target.value})
-    // setFormIsValid(
-    //   emailState.isValid && event.target.value.trim().length > 6
-    // );
+  const passwordChangeHandler = event => {
+    dispatchPassword({ type: 'USER_INPUT', val: event.target.value });
   };
 
   const validateEmailHandler = () => {
-    // setEmailIsValid(emailState.isValid);
-    dispatchEmail({type: 'INPUT_BLUR'})
+    dispatchEmail({ type: 'INPUT_BLUR' });
   };
 
   const validatePasswordHandler = () => {
-    dispatchPassword({input: 'BLUR'})
+    dispatchPassword({ type: 'INPUT_BLUR' });
   };
 
-  const submitHandler = (event) => {
+  const submitHandler = event => {
     event.preventDefault();
-    props.onLogin(emailState.value, passwordState.value);
+    authCtx.onLogin(emailState.value, passwordState.value);
   };
 
   return (
