@@ -6,7 +6,7 @@ import classes from './Home.module.css';
 import AuthContext from '../../store/auth-context';
 
 
-const Home = (props) => {
+const Home = () => {
   const authCtx = useContext(AuthContext)
   return (
     <Card className={classes.home}>
