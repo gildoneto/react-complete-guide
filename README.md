@@ -179,3 +179,43 @@ Generally, you'll know when you need useReducer() (-> when useState() become cum
 | The main state management "tool" | Great if you need "more power" |
 | Great for independent pieces of state/data | Should be considered if you have related pieces of state/data |
 | Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates |
+
+## Section 11 Practice Project: Building a Food Order App
+
+## Section 12
+
+## Section 13
+
+## Section 14
+
+## Section 15
+
+## Section 16
+
+## Section 17
+
+## Section 18
+
+## Section 19
+
+## Section 20
+
+## Section 21
+
+## Section 22
+
+## Section 23
+
+## Section 24
+
+## Section 25
+
+## Section 26
+
+## Section 27
+
+## Section 28
+
+## Section 29
+
+## Section 30
