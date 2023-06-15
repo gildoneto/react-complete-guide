@@ -20,7 +20,7 @@ Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React
 
 ## Section 10 Handling Side Effects, Using Reducers and Using Context Api
 
-### What is an "Effect" (or a "Side Effect")?
+### What is an "Effect" (or a "Side Effect") ?
 
 Remember that the main job of React is Render UI and react to User Input:
 
