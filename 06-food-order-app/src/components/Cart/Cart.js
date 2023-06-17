@@ -8,13 +8,17 @@ import styles from './Cart.module.css';
 import CartContext from '../../store/cart-context';
 
 const Cart = ({ onClose }) => {
-  const { items, totalAmount } = useContext(CartContext);
+  const { items, totalAmount, addItem, removeItem } = useContext(CartContext);
 
   const totalAmountCtx = `$${totalAmount.toFixed(2)}`;
   const hasItems = items.length > 0;
 
-  const cartItemRemoveHandler = id => {};
-  const cartItemAddHandler = item => {};
+  const cartItemRemoveHandler = id => {
+    removeItem(id);
+  };
+  const cartItemAddHandler = item => {
+    addItem({ ...item, amount: 1 });
+  };
   const cartItems = (
     <ul className={styles['cart-items']}>
       {items.map(item => (
