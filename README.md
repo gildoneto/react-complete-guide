@@ -182,6 +182,8 @@ Generally, you'll know when you need useReducer() (-> when useState() become cum
 
 ## Section 11 Practice Project: Building a Food Order App
 
+Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-guide/tree/main/06-food-order-app)
+
 ## Section 12
 
 ## Section 13
