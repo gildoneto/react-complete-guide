@@ -41,8 +41,6 @@ const CartProvider = ({ children }) => {
     removeItem: removeItemFromCartHandler,
   };
 
-  //   const cartContextMemo = useMemo(cartContext);
-
   return (
     <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>
   );
