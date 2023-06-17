@@ -2,23 +2,27 @@
 
 Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) do instrutor [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
 
+## Section 01 - Getting Started
+
 ## Section 02 - JavaScript Refresher
 
 ## Section 03 - React Basics and Working with Components
 
-## Section 04 - React State and Working with Events
+## Section 04 - Component Basics
 
-## Section 05 - Redering Lists and Conditional Content
+## Section 05 - React State and Working with Events
 
-## Section 06 - Styling React Components
+## Section 06 - Redering Lists and Conditional Content
 
-## Section 07 - Debugging React Apps
+## Section 07 - Styling React Components
 
-## Section 08 - User Project
+## Section 08 - Debugging React Apps
 
-## Section 09 - Diving Deeper: Working with Fragments, Portals and Refs
+## Section 09 - Time to Practice - User and Investment Calculator
 
-## Section 10 Handling Side Effects, Using Reducers and Using Context Api
+## Section 10 - Diving Deeper: Working with Fragments, Portals and Refs
+
+## Section 11 - Handling Side Effects, Using Reducers and Using Context Api
 
 ### What is an "Effect" (or a "Side Effect") ?
 
@@ -73,15 +77,15 @@ So long story short: You must add all "things" you use in your effect function *
 Here's a made-up dummy example to further clarify the above-mentioned scenarios:
 
 ```javascript
-import { useEffect, useState } from 'react';
- 
+import { useEffect, useState } from "react";
+
 let myTimer;
- 
+
 const MyComponent = (props) => {
   const [timerIsActive, setTimerIsActive] = useState(false);
- 
+
   const { timerDuration } = props; // using destructuring to pull out specific props values
- 
+
   useEffect(() => {
     if (!timerIsActive) {
       setTimerIsActive(true);
@@ -174,17 +178,15 @@ Because now the e**ffect function would re-run whenever ANY property** of `someO
 
 Generally, you'll know when you need useReducer() (-> when useState() become cumbersome or you're getting a lot of bugs/ unintended behaviours)
 
-| `useState()` | `useReducer()` |
-| --- | ---|
-| The main state management "tool" | Great if you need "more power" |
-| Great for independent pieces of state/data | Should be considered if you have related pieces of state/data |
-| Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates |
+| `useState()`                                                          | `useReducer()`                                                |
+| --------------------------------------------------------------------- | ------------------------------------------------------------- |
+| The main state management "tool"                                      | Great if you need "more power"                                |
+| Great for independent pieces of state/data                            | Should be considered if you have related pieces of state/data |
+| Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates         |
 
-## Section 11 Practice Project: Building a Food Order App
+## Section 12 Practice Project: Building a Food Order App
 
 Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-guide/tree/main/06-food-order-app)
-
-## Section 12
 
 ## Section 13
 
@@ -221,3 +223,5 @@ Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-gui
 ## Section 29
 
 ## Section 30
+
+## Section 31
