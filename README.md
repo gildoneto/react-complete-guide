@@ -32,6 +32,8 @@ State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/m
 
 ## Section 09 - Time to Practice - User and Investment Calculator
 
+Section 09 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2009.pdf)
+
 ## Section 10 - Diving Deeper: Working with Fragments, Portals and Refs
 
 ## Section 11 - Handling Side Effects, Using Reducers and Using Context Api
