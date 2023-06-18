@@ -30,9 +30,13 @@ State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/m
 
 ## Section 08 - Debugging React Apps
 
-## Section 09 - Time to Practice - User and Investment Calculator
+## Section 09 - Time to Practice - Investment Calculator and ToDo
 
 Section 09 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2009.pdf)
+
+Project 1 -> [04a-investment-calculator](https://github.com/gildoneto/react-complete-guide/tree/main/04a-investment-calculator)
+
+Project 2 -> [04b-todo-reusable-components](https://github.com/gildoneto/react-complete-guide/tree/main/04b-todo-reusable-components)
 
 ## Section 10 - Diving Deeper: Working with Fragments, Portals and Refs
 
