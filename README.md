@@ -4,7 +4,11 @@ Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React
 
 ## Section 01 - Getting Started
 
+[Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2001.pdf)
+
 ## Section 02 - JavaScript Refresher
+
+[Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2002.pdf)
 
 ## Section 03 - React Basics and Working with Components
 
