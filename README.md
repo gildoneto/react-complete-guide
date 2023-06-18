@@ -18,6 +18,8 @@ React Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/mai
 
 ## Section 04 - Component Basics
 
+Components Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2004.pdf)
+
 ## Section 05 - React State and Working with Events
 
 ## Section 06 - Redering Lists and Conditional Content
