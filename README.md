@@ -10,6 +10,8 @@ Getting started [Slides](https://github.com/gildoneto/react-complete-guide/blob/
 
 JavaScript refresher [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2002.pdf)
 
+Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-guide/tree/main/00-js-refresher)
+
 ## Section 03 - React Basics and Working with Components
 
 ## Section 04 - Component Basics
