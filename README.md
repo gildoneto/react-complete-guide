@@ -22,6 +22,8 @@ Components Basics [Slides](https://github.com/gildoneto/react-complete-guide/blo
 
 ## Section 05 - React State and Working with Events
 
+State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2005.pdf)
+
 ## Section 06 - Redering Lists and Conditional Content
 
 ## Section 07 - Styling React Components
