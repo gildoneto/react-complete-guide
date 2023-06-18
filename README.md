@@ -14,6 +14,8 @@ Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-
 
 ## Section 03 - React Basics and Working with Components
 
+React Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2003.pdf)
+
 ## Section 04 - Component Basics
 
 ## Section 05 - React State and Working with Events
