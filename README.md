@@ -206,7 +206,9 @@ Generally, you'll know when you need useReducer() (-> when useState() become cum
 
 Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-guide/tree/main/06-food-order-app)
 
-## Section 13
+## Section 13 - A Look Behind The Scenes Of React & Optimization Techniques
+
+Section 13 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2013.pdf)
 
 ## Section 14
 
