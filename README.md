@@ -2,35 +2,35 @@
 
 Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) do instrutor [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
 
-## Section 01 - Getting Started
+## Section 01: Getting Started
 
 Getting started [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2001.pdf)
 
-## Section 02 - JavaScript Refresher
+## Section 02: JavaScript Refresher
 
 JavaScript refresher [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2002.pdf)
 
 Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-guide/tree/main/00-js-refresher)
 
-## Section 03 - React Basics and Working with Components
+## Section 03: React Basics and Working with Components
 
 React Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2003.pdf)
 
-## Section 04 - Component Basics
+## Section 04: Component Basics
 
 Components Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2004.pdf)
 
-## Section 05 - React State and Working with Events
+## Section 05: React State and Working with Events
 
 State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2005.pdf)
 
-## Section 06 - Redering Lists and Conditional Content
+## Section 06: Redering Lists and Conditional Content
 
-## Section 07 - Styling React Components
+## Section 07: Styling React Components
 
-## Section 08 - Debugging React Apps
+## Section 08: Debugging React Apps
 
-## Section 09 - Time to Practice - Investment Calculator and ToDo
+## Section 09: Time to Practice - Investment Calculator and ToDo
 
 Section 09 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2009.pdf)
 
@@ -38,9 +38,9 @@ Project 1 -> [04a-investment-calculator](https://github.com/gildoneto/react-comp
 
 Project 2 -> [04b-todo-reusable-components](https://github.com/gildoneto/react-complete-guide/tree/main/04b-todo-reusable-components)
 
-## Section 10 - Diving Deeper: Working with Fragments, Portals and Refs
+## Section 10: Diving Deeper: Working with Fragments, Portals and Refs
 
-## Section 11 - Handling Side Effects, Using Reducers and Using Context Api
+## Section 11: Handling Side Effects, Using Reducers and Using Context Api
 
 ### What is an "Effect" (or a "Side Effect") ?
 
@@ -202,15 +202,17 @@ Generally, you'll know when you need useReducer() (-> when useState() become cum
 | Great for independent pieces of state/data                            | Should be considered if you have related pieces of state/data |
 | Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates         |
 
-## Section 12 Practice Project: Building a Food Order App
+## Section 12: Practice Project: Building a Food Order App
 
 Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-guide/tree/main/06-food-order-app)
 
-## Section 13 - A Look Behind The Scenes Of React & Optimization Techniques
+## Section 13: A Look Behind The Scenes Of React & Optimization Techniques
 
 Section 13 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2013.pdf)
 
-## Section 14
+## Section 14: An Alternative Way Of Building Components: Class-based Components
+
+Section 14 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2014.pdf)
 
 ## Section 15
 
