@@ -216,6 +216,8 @@ Section 14 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/
 
 ## Section 15
 
+Section 15 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2015.pdf)
+
 ## Section 16
 
 ## Section 17
