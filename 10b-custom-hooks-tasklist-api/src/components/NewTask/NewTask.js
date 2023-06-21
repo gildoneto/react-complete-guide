@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Section from '../UI/Section';
 import TaskForm from './TaskForm';
 
+const firebaseUrl = process.env.REACT_APP_API_URL;
+
 const NewTask = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -12,7 +14,7 @@ const NewTask = (props) => {
     setError(null);
     try {
       const response = await fetch(
-        'https://react-http-6b4a6.firebaseio.com/tasks.json',
+        firebaseUrl + '/tasks.json',
         {
           method: 'POST',
           body: JSON.stringify({ text: taskText }),
