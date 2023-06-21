@@ -6,7 +6,7 @@ import './App.css';
 
 // const baseUrl = 'https://swapi.dev/';
 // const baseUrlBackup = 'https://swapi.py4e.com/';
-const firebaseUrl = 'https://react-api-a6394-default-rtdb.firebaseio.com';
+const firebaseUrl = process.env.REACT_APP_API_URL;
 
 function App() {
   const [movies, setMovies] = useState([]);
