@@ -220,6 +220,10 @@ Section 15 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/
 
 ## Section 16
 
+Section 16 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2016.pdf)
+
+https://academind.com/tutorials/function-bind-event-execution/
+
 ## Section 17
 
 ## Section 18
