@@ -9,25 +9,21 @@ const firebaseUrl = process.env.REACT_APP_API_URL;
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const transformTasks = (taskobj) => {
-    const loadedTasks = [];
-
-    for (const taskKey in taskobj) {
-      loadedTasks.push({ id: taskKey, text: taskobj[taskKey].text });
-    }
-
-    setTasks(loadedTasks);
-  };
-
-  const {
-    isLoading,
-    error,
-    sendRequest: fetchTasks,
-  } = useHttp({ url: firebaseUrl + "/tasks.json" }, transformTasks);
+  const { isLoading, error, sendRequest: fetchTasks } = useHttp();
 
   useEffect(() => {
-    fetchTasks();
-  }, []);
+    const transformTasks = (taskobj) => {
+      const loadedTasks = [];
+
+      for (const taskKey in taskobj) {
+        loadedTasks.push({ id: taskKey, text: taskobj[taskKey].text });
+      }
+
+      setTasks(loadedTasks);
+    };
+
+    fetchTasks({ url: firebaseUrl + "/tasks.json" }, transformTasks);
+  }, [fetchTasks]);
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
