@@ -226,6 +226,12 @@ https://academind.com/tutorials/function-bind-event-execution/
 
 ## Section 17
 
+Section 17 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2017.pdf)
+
+https://academind.com/tutorials/reactjs-a-custom-useform-hook/
+
+https://formik.org/docs/overview
+
 ## Section 18
 
 ## Section 19
