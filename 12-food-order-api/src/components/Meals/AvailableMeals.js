@@ -7,6 +7,7 @@ const firebaseUrl = process.env.REACT_APP_API_URL;
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
 
@@ -26,8 +27,9 @@ const AvailableMeals = () => {
       }
 
       setMeals(loadedMeals);
+      setIsLoading(false);
     };
-    
+
     fetchMeals();
   }, [])
   const mealsList = meals.map((meal) => (
@@ -39,6 +41,12 @@ const AvailableMeals = () => {
       price={meal.price}
     />
   ));
+
+  if (isLoading) {
+    return <section className={classes.MealsLoading}>
+      <p>Loading...</p>
+    </section>
+  }
 
   return (
     <section className={classes.meals}>
