@@ -236,7 +236,9 @@ https://formik.org/docs/overview
 
 Go to folder [12-food-order-api](https://github.com/gildoneto/react-complete-guide/tree/main/12-food-order-api)
 
-## Section 19
+## Section 19: Diving into Redux (An Alternative To The Context API)
+
+Section 19 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2019.pdf)
 
 ## Section 20
 
