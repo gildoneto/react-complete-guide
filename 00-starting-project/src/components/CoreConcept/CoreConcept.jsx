@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const Concept = ({ image, title, description }) => {
+const CoreConcept = ({ image, title, description }) => {
   return (
     <li className="concept">
       <img src={image} alt={title} />
@@ -9,4 +9,4 @@ const Concept = ({ image, title, description }) => {
   );
 };
 
-export default Concept;
+export default CoreConcept;
