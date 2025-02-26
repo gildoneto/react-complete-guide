@@ -14,7 +14,7 @@ Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-
 
 ## Section 03: React Essentials - Components, JSX, Props, State and More
 
-React Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2003.pdf)
+Project folder -> [01-starting-project](https://github.com/gildoneto/react-complete-guide/tree/main/01-starting-project)
 
 ### Passing a Single Prop Object
 
