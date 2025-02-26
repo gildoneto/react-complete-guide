@@ -4,11 +4,7 @@ Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React
 
 ## Section 01: Getting Started
 
-Getting started [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2001.pdf)
-
 ## Section 02: JavaScript Refresher
-
-JavaScript refresher [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2002.pdf)
 
 Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-guide/tree/main/00-js-refresher)
 
@@ -82,8 +78,6 @@ export default function CoreConcept({ ...concept }) {
 
 ## Section 05: React State and Working with Events
 
-State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2005.pdf)
-
 ## Section 06: Redering Lists and Conditional Content
 
 ## Section 07: Styling React Components
@@ -91,8 +85,6 @@ State + Events [Slides](https://github.com/gildoneto/react-complete-guide/blob/m
 ## Section 08: Debugging React Apps
 
 ## Section 09: Time to Practice - Investment Calculator and ToDo
-
-Section 09 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2009.pdf)
 
 Project 1 -> [04a-investment-calculator](https://github.com/gildoneto/react-complete-guide/tree/main/04a-investment-calculator)
 
@@ -268,25 +260,20 @@ Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-gui
 
 ## Section 13: A Look Behind The Scenes Of React & Optimization Techniques
 
-Section 13 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2013.pdf)
 
 ## Section 14: An Alternative Way Of Building Components: Class-based Components
 
-Section 14 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2014.pdf)
 
 ## Section 15
 
-Section 15 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2015.pdf)
 
 ## Section 16
 
-Section 16 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2016.pdf)
 
 https://academind.com/tutorials/function-bind-event-execution/
 
 ## Section 17
 
-Section 17 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2017.pdf)
 
 https://academind.com/tutorials/reactjs-a-custom-useform-hook/
 
@@ -297,8 +284,6 @@ https://formik.org/docs/overview
 Go to folder [12-food-order-api](https://github.com/gildoneto/react-complete-guide/tree/main/12-food-order-api)
 
 ## Section 19: Diving into Redux (An Alternative To The Context API)
-
-Section 19 [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2019.pdf)
 
 ## Section 20
 
