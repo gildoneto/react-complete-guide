@@ -12,7 +12,7 @@ JavaScript refresher [Slides](https://github.com/gildoneto/react-complete-guide/
 
 Project folder -> [00-js-refresher](https://github.com/gildoneto/react-complete-guide/tree/main/00-js-refresher)
 
-## Section 03: React Basics and Working with Components
+## Section 03: React Essentials - Components, JSX, Props, State and More
 
 React Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2003.pdf)
 
@@ -71,9 +71,14 @@ export default function CoreConcept({ ...concept }) {
 }
 ```
 
-## Section 04: Component Basics
+## Section 04: React Essentials - Deep Dive
 
-Components Basics [Slides](https://github.com/gildoneto/react-complete-guide/blob/main/slides/Section%2004.pdf)
+### Beyond the Basics
+
+- Behind the scenes of **JSX**
+- Structuring **Components** and **State**
+- **Advanced State** usage
+- **Patterns & Best Practices**
 
 ## Section 05: React State and Working with Events
 
