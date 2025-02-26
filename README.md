@@ -1,6 +1,6 @@
 # React - The Complete Guide
 
-Repositório de projetos do curso [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) do instrutor [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
+Repositório de projetos do curso [React - The Complete Guide (incl. Next.js, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) do instrutor [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
 
 ## Section 01: Getting Started
 
