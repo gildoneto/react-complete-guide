@@ -76,23 +76,19 @@ export default function CoreConcept({ ...concept }) {
 - **Advanced State** usage
 - **Patterns & Best Practices**
 
-## Section 05: React State and Working with Events
+## Section 05: React Essentials - Practice Project
 
-## Section 06: Redering Lists and Conditional Content
+## Section 06: Styling React Components
 
-## Section 07: Styling React Components
+## Section 07: Debugging React Apps
 
-## Section 08: Debugging React Apps
+## Section 08: Working with Refs & Portals
 
-## Section 09: Time to Practice - Investment Calculator and ToDo
+## Section 09: Project Management App
 
-Project 1 -> [04a-investment-calculator](https://github.com/gildoneto/react-complete-guide/tree/main/04a-investment-calculator)
+## Section 10: React's Context API & useReducer - Advanced State Management
 
-Project 2 -> [04b-todo-reusable-components](https://github.com/gildoneto/react-complete-guide/tree/main/04b-todo-reusable-components)
-
-## Section 10: Diving Deeper: Working with Fragments, Portals and Refs
-
-## Section 11: Handling Side Effects, Using Reducers and Using Context Api
+## Section 11: Handling Side Effects & Working with the useEffect() Hook
 
 ### What is an "Effect" (or a "Side Effect") ?
 
@@ -254,57 +250,48 @@ Generally, you'll know when you need useReducer() (-> when useState() become cum
 | Great for independent pieces of state/data                            | Should be considered if you have related pieces of state/data |
 | Great if state updates are easy and limited to a few kinds of updates | Can be helpful if you have more complex state updates         |
 
-## Section 12: Practice Project: Building a Food Order App
-
-Go to folder [06-food-order-app](https://github.com/gildoneto/react-complete-guide/tree/main/06-food-order-app)
+## Section 12: Practice Project: Building a Quiz App
 
 ## Section 13: A Look Behind The Scenes Of React & Optimization Techniques
 
-
 ## Section 14: An Alternative Way Of Building Components: Class-based Components
 
+## Section 15: Sending Http Requests (Connecting on a Database)
 
-## Section 15
+## Section 16: Building Custom React Hooks
 
+## Section 17: Working with Forms & User Input
 
-## Section 16
+[Formik Documentation](https://formik.org/docs/overview)
 
+## Section 18: Handling Forms via Form Actions
 
-https://academind.com/tutorials/function-bind-event-execution/
+## Section 19: Building a Food Order App
 
-## Section 17
+## Section 20: Diving into Redux (An Alternative To The Context API)
 
+## Section 21: Advanced Redux
 
-https://academind.com/tutorials/reactjs-a-custom-useform-hook/
+## Section 22: Building a Multi-Page SPA with React Router
 
-https://formik.org/docs/overview
+## Section 23: Adding Authentication To React Apps
 
-## Section 18: Practice Project: Adding Http & Forms To The Food Order App
+## Section 24: Deploying React Apps
 
-Go to folder [12-food-order-api](https://github.com/gildoneto/react-complete-guide/tree/main/12-food-order-api)
+## Section 25: React Query / Tanstack Query: Handling HTTP Requests with Ease
 
-## Section 19: Diving into Redux (An Alternative To The Context API)
+## Section 26: A (Pretty Deep Dive) Introduction to Next.js
 
-## Section 20
+## Section 27: React Server Components (RSC) & Server Actions - A Closer Look
 
-## Section 21
+## Section 28: Animating React Apps
 
-## Section 22
+## Section 29: React Patterns & Best Practices
 
-## Section 23
+## Section 30: Replacing Redux with React Hooks
 
-## Section 24
+## Section 31: Testing React Apps (Unit Tests)
 
-## Section 25
+## Section 32: React + TypeScript
 
-## Section 26
-
-## Section 27
-
-## Section 28
-
-## Section 29
-
-## Section 30
-
-## Section 31
+## Section 33: React Summary & Core Feature Walkthrough
